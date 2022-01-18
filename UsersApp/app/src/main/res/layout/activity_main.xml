@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userList_listview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/generate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="87dp"
+        android:text="Generate Random User" />
+
+    <TableLayout
+        android:id="@+id/userTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white">
+
+        <!--Table Heading-->
+
+        <TableRow
+            android:layout_width="365dp"
+            android:background="@color/teal_200">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/col5"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/col1"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/col2"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/col3"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/col4"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+            >
+        </TableRow>
+
+        <!--Table data-->
+        <TableRow
+            android:background="@color/white"
+            android:orientation="vertical">
+            android:id="@+id/dataRow";
+
+            <ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:gravity="center_horizontal"
+                android:padding="10sp" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:textSize="8sp" />
+            >
+        </TableRow>
+
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="159dp"
+        android:gravity="center"
+        android:text="All Users" />
+
+
+
+
+</RelativeLayout>
